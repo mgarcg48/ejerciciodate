@@ -1,4 +1,7 @@
 public class Date(int dia, int mes, int anio) throws Excepcion1{
+
+	anio=Tecaldo.readInteger();	
+
 	String mens= new String Buffer();
 
 	if (anio<0){
@@ -10,6 +13,8 @@ public class Date(int dia, int mes, int anio) throws Excepcion1{
 		throw ExcepcionDate(mens.toSring());
 	}
 	
+	mes=Teclado.readInteger();
+
 	if ((mes<0) && (mes>12){
 		mens.append("El mes introducido es incorrecto.");
 	} else {
@@ -18,6 +23,8 @@ public class Date(int dia, int mes, int anio) throws Excepcion1{
 	if (mens.length() !=0){
 		throw new ExcepcionDate(mens.toString());
 	}	
+
+	dia=Teclado.readInteger();
 
 	if ((dia<0) && (dia>31)){
 		mens.append("El día es incorrecto.");
